@@ -15,6 +15,49 @@
       font-family: serif;
       background-color: #ffffff;
       color: #1a1a1a;
+      position: relative;
+    }
+
+    .issue-top-right {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      font-size: 13px;
+      color: #444;
+      border: 1px solid #ccc;
+      padding: 4px 10px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      font-weight: 500;
+      font-family: serif;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 999;
+      letter-spacing: 0.5px;
+    }
+
+    .back-button {
+      position: fixed;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .back-button:hover {
+      background-color: #ddd;
+      border-color: #888;
+      color: #000;
     }
 
     .wrapper {
@@ -141,6 +184,13 @@
   </style>
 </head>
 <body>
+
+  <!-- 오른쪽 상단 6월호 표시 -->
+  <div class="issue-top-right">6월호</div>
+
+  <!-- 바디 왼쪽 센터 뒤로가기 버튼 -->
+  <div class="back-button" onclick="location.href='https://dlghkgus.github.io/main2/'">&#8592;</div>
+
   <div class="wrapper">
     <header>
       <h1>지루함의 미학</h1>
